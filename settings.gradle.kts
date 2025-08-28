@@ -19,6 +19,12 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SexProyect"
-include(":app")
- 
+rootProject.name = "dating-app"
+include(":android:app")
+include(
+    ":backend:application",
+    ":backend:auth",
+    ":backend:profiles",
+    ":backend:matching",
+    ":backend:chat"
+)
