@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="16dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_profile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <View
+            android:id="@+id/gradient_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/gradient_scrim"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_name_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/chip_group_interests"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Jessica, 24" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_interests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Overlays for swipe feedback -->
+        <TextView
+            android:id="@+id/overlay_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIKE"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_light"
+            android:padding="16dp"
+            android:rotation="-20"
+            android:alpha="0"
+            android:background="@drawable/overlay_border"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="48dp"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:id="@+id/overlay_nope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOPE"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"
+            android:padding="16dp"
+            android:rotation="20"
+            android:alpha="0"
+            android:background="@drawable/overlay_border"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

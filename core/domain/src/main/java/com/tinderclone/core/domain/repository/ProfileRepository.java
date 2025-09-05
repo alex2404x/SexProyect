@@ -5,6 +5,8 @@ import androidx.lifecycle.LiveData;
 import com.tinderclone.core.domain.helpers.Resource;
 import com.tinderclone.core.domain.model.User;
 
+import java.util.List;
+
 public interface ProfileRepository {
 
     /**
@@ -35,4 +37,10 @@ public interface ProfileRepository {
      * @return LiveData containing the download URL of the uploaded image.
      */
     LiveData<Resource<String>> uploadProfilePhoto(Uri imageUri, String uid);
+
+    /**
+     * Fetches a list of users for the swipe deck.
+     * @return LiveData containing the list of users.
+     */
+    LiveData<Resource<List<User>>> getUsersForSwipeDeck();
 }
