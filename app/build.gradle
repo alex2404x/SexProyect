@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.tinderclone'
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.tinderclone"
+        minSdk rootProject.ext.minSdkVersion
+        targetSdk rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    // Project Modules
+    implementation project(':feature:auth')
+    implementation project(':feature:profile')
+    implementation project(':feature:home')
+    implementation project(':feature:explore')
+    implementation project(':feature:chat')
+    implementation project(':feature:settings')
+    // Core modules are typically implemented by feature modules, but app needs them for wiring things up.
+    implementation project(':core:ui')
+    implementation project(':core:data')
+    implementation project(':core:domain')
+
+
+    // AndroidX & Material
+    implementation "com.google.android.material:material:$rootProject.ext.materialVersion"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment:$rootProject.ext.navigationVersion"
+    implementation "androidx.navigation:navigation-ui:$rootProject.ext.navigationVersion"
+
+    // Firebase
+    implementation platform("com.google.firebase:firebase-bom:$rootProject.ext.firebaseBomVersion")
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Testing
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+    androidTestImplementation "androidx.test.ext:junit:$rootProject.ext.extJunitVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espressoVersion"
+}

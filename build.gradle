@@ -1,0 +1,40 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        // Sdk and tools
+        minSdkVersion = 24
+        targetSdkVersion = 34
+        compileSdkVersion = 34
+
+        // App dependencies
+        materialVersion = '1.11.0'
+        navigationVersion = '2.7.5'
+        lifecycleVersion = '2.6.2'
+        roomVersion = '2.6.0'
+        datastoreVersion = '1.0.0'
+        glideVersion = '4.16.0'
+        cardstackviewVersion = '2.3.4'
+        firebaseBomVersion = '32.7.0'
+
+        // Testing
+        junitVersion = '4.13.2'
+        extJunitVersion = '1.1.5'
+        espressoVersion = '3.5.1'
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.1'
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.2.0' apply false
+    id 'com.android.library' version '8.2.0' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

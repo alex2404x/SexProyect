@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.tinderclone.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_auth_navigation"
+            app:destination="@id/auth_navigation"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <include app:graph="@navigation/auth_navigation" />
+
+    <include app:graph="@navigation/onboarding_navigation" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.tinderclone.feature.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_explore"
+        android:name="com.tinderclone.feature.explore.ExploreFragment"
+        android:label="@string/title_explore"
+        tools:layout="@layout/fragment_explore" />
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.tinderclone.feature.chat.ChatFragment"
+        android:label="@string/title_chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.tinderclone.feature.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.tinderclone.feature.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <action android:id="@+id/action_global_to_main_flow"
+        app:destination="@id/navigation_home"
+        app:popUpTo="@id/auth_navigation"
+        app:popUpToInclusive="true" />
+
+    <action android:id="@+id/action_global_to_onboarding_flow"
+        app:destination="@id/onboarding_navigation"
+        app:popUpTo="@id/auth_navigation"
+        app:popUpToInclusive="true" />
+
+    <action android:id="@+id/action_onboarding_to_main_flow"
+        app:destination="@id/navigation_home"
+        app:popUpTo="@id/onboarding_navigation"
+        app:popUpToInclusive="true" />
+
+</navigation>

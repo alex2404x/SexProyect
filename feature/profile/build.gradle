@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace "com.tinderclone.feature.profile"
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdk rootProject.ext.minSdkVersion
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(':core:domain')
+    implementation project(':core:data')
+    implementation project(':core:ui')
+
+    // Lifecycle, ViewModel, LiveData
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.ext.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata:$rootProject.ext.lifecycleVersion"
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment:$rootProject.ext.navigationVersion"
+    implementation "androidx.navigation:navigation-ui:$rootProject.ext.navigationVersion"
+
+    // Firebase
+    implementation platform("com.google.firebase:firebase-bom:$rootProject.ext.firebaseBomVersion")
+}

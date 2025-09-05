@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_navigation"
+    app:startDestination="@id/onboardingStep1Fragment">
+
+    <fragment
+        android:id="@+id/onboardingStep1Fragment"
+        android:name="com.tinderclone.feature.profile.OnboardingStep1Fragment"
+        android:label="fragment_onboarding_step1"
+        tools:layout="@layout/fragment_onboarding_step1" >
+        <!-- e.g. <action android:id="@+id/action_step1_to_step2" app:destination="@id/onboardingStep2Fragment" /> -->
+    </fragment>
+
+    <!-- OnboardingStep2, Step3, etc. will be added here -->
+
+</navigation>

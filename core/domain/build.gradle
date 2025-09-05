@@ -1,0 +1,15 @@
+plugins {
+    id 'java-library'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    // This module will contain business models (POJOs), use cases, and repository interfaces.
+    // It should be pure Java/Kotlin.
+    // Example for dependency injection annotations, if needed later:
+    // implementation 'javax.inject:javax.inject:1'
+}
