@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">SexProyect</string>
+    <string name="app_name">Casual Conex</string>
+    <string name="app_title">Casual Conex</string>
+    <string name="app_tagline">Encuentros casuales, energía instantánea.</string>
+    <string name="profile_image_content_description">Foto de perfil del usuario</string>
+    <string name="profile_name_age">%1$s, %2$d</string>
+    <string name="profile_distance">%1$d km cerca de ti</string>
+    <string name="profile_bio_label">Sobre mí</string>
+    <string name="status_default">Desliza para descubrir conexiones vibrantes.</string>
+    <string name="status_skip">Decidiste seguir explorando. ¡El siguiente match puede sorprenderte!</string>
+    <string name="status_like">Enviando buena vibra a %1$s.</string>
+    <string name="status_super_like">¡Chispa enviada a %1$s! ✨</string>
+    <string name="action_skip">Saltar</string>
+    <string name="action_like">Me gusta</string>
+    <string name="action_super_like">Chispa</string>
 </resources>

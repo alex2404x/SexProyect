@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background_start">#211033</color>
+    <color name="background_end">#431958</color>
+    <color name="card_background">#FFFBFD</color>
+    <color name="text_primary">#1D1D1F</color>
+    <color name="text_secondary">#6B6B6B</color>
+    <color name="accent_pink">#FF5F8D</color>
+    <color name="accent_orange">#FF8E53</color>
+    <color name="accent_indigo">#6C63FF</color>
+    <color name="chip_background">#FFE6F3</color>
+    <color name="chip_text">#E21E5E</color>
+    <color name="chip_ripple">#33FF5F8D</color>
 </resources>
