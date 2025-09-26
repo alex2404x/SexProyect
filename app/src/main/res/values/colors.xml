@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background_primary">#FFF8F5</color>
+    <color name="surface_elevated">#FFFFFFFF</color>
+    <color name="card_stroke">#1F000000</color>
+    <color name="photo_background">#0D000000</color>
+    <color name="text_primary">#FF2F2A2A</color>
+    <color name="text_secondary">#8A2F2A2A</color>
+    <color name="text_on_accent">#FFFFFFFF</color>
+    <color name="icon_tint">#FF6A4AB5</color>
+    <color name="secondary_button_background">#1A6A4AB5</color>
+    <color name="bottom_navigation_ripple">#1F6A4AB5</color>
+    <color name="message_unread">#FF6A4AB5</color>
+    <color name="message_read">#8A2F2A2A</color>
 </resources>

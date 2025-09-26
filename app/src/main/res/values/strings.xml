@@ -1,3 +1,62 @@
 <resources>
-    <string name="app_name">SexProyect</string>
+    <string name="app_name">Aura Casual</string>
+
+    <!-- Navigation -->
+    <string name="menu_discover">Descubrir</string>
+    <string name="menu_matches">Matches</string>
+    <string name="menu_messages">Mensajes</string>
+    <string name="menu_profile">Perfil</string>
+
+    <!-- Discover -->
+    <string name="discover_headline">Descubre nuevas conexiones</string>
+    <string name="profile_name_age">%1$s · %2$d</string>
+    <string name="profile_liked_message">¡Te gustó %1$s! Empieza la conversación en Matches.</string>
+    <string name="profile_skipped_message">Has pasado a %1$s. Prueba con la siguiente conexión.</string>
+
+    <!-- Actions -->
+    <string name="action_skip">Pasar</string>
+    <string name="action_like">Me gusta</string>
+    <string name="action_send_message">Enviar mensaje</string>
+    <string name="action_edit_profile">Editar perfil</string>
+    <string name="action_visibility">Visibilidad</string>
+
+    <!-- Matches -->
+    <string name="matches_headline">Tus matches</string>
+    <string name="matches_empty">Aún no tienes matches. Sigue explorando y conecta con personas afines.</string>
+    <string name="match_start_conversation">Escribe a %1$s y coordina un plan casual.</string>
+    <string name="matched_hours_ago">Hace %1$d h</string>
+    <string name="matched_day_ago">Ayer</string>
+
+    <!-- Messages -->
+    <string name="messages_headline">Conversaciones</string>
+    <string name="messages_empty">Todavía no hay chats. Envía el primer mensaje.</string>
+    <string name="message_thread_emilia">¿Nos vemos el jueves en el rooftop?</string>
+    <string name="message_thread_sofia">Te guardé dos boletos para el concierto.</string>
+    <string name="message_thread_camila">La ruta a Tequila pinta increíble este fin.</string>
+    <string name="message_open_chat">Abriendo chat con %1$s…</string>
+    <string name="time_today">Hoy · %1$s</string>
+    <string name="time_yesterday">Ayer · %1$s</string>
+
+    <!-- Profile -->
+    <string name="profile_headline">Tu perfil</string>
+    <string name="profile_edit_toast">La edición de perfil estará disponible pronto.</string>
+    <string name="profile_visibility_toast">Tu perfil ahora está más visible para conexiones afines.</string>
+
+    <!-- Locations -->
+    <string name="profile_location_chapala">Chapala • 4 km</string>
+    <string name="profile_location_zapopan">Zapopan • 6 km</string>
+    <string name="profile_location_guadalajara">Guadalajara Centro • 2 km</string>
+    <string name="profile_location_tlaquepaque">Tlaquepaque • 8 km</string>
+    <string name="profile_location_tonala">Tonala • 9 km</string>
+
+    <!-- Biographies -->
+    <string name="profile_bio_emilia">Productora de eventos. Busco compañía para after office espontáneos y brunchs sin prisa.</string>
+    <string name="profile_bio_alex">Fotógrafo freelance. Siempre listo para una tarde de café, bici y buena charla.</string>
+    <string name="profile_bio_sofia">Tattoo artist. Amante de la música en vivo y las series oscuras.</string>
+    <string name="profile_bio_camila">Chef nómada. Planeo road trips improvisados con playlist compartidas.</string>
+    <string name="profile_bio_lucia">Product manager. Fan de los museos, la tecnología y el crossfit.</string>
+    <string name="profile_bio_valeria">Estratega de marcas. Me encontrarás explorando mercados locales y bares con mixología creativa.</string>
+
+    <!-- Accessibility -->
+    <string name="content_description_profile_photo">Foto de perfil de la persona</string>
 </resources>

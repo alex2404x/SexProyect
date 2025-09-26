@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_medium"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/card_stroke"
+    app:strokeWidth="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="96dp"
+        android:padding="@dimen/spacing_medium">
+
+        <ImageView
+            android:id="@+id/matchPhoto"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/content_description_profile_photo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/illustration_emilia"
+            android:background="@drawable/profile_photo_background"
+            android:clipToOutline="true" />
+
+        <TextView
+            android:id="@+id/matchName"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/matchPhoto"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:textColor="@color/text_primary" />
+
+        <TextView
+            android:id="@+id/matchTime"
+            style="@style/TextAppearance.Material3.BodySmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/matchName"
+            android:layout_toEndOf="@id/matchPhoto"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_secondary" />
+
+        <ImageButton
+            android:id="@+id/sendMessageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/secondary_button_background"
+            android:contentDescription="@string/action_send_message"
+            android:padding="8dp"
+            android:src="@drawable/ic_nav_messages"
+            app:tint="@color/text_on_accent" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

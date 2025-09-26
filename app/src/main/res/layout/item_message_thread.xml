@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_small"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/card_stroke"
+    app:strokeWidth="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="88dp"
+        android:padding="@dimen/spacing_medium">
+
+        <ImageView
+            android:id="@+id/threadPhoto"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/content_description_profile_photo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/illustration_emilia"
+            android:background="@drawable/profile_photo_background"
+            android:clipToOutline="true" />
+
+        <TextView
+            android:id="@+id/threadName"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/threadPhoto"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:textColor="@color/text_primary" />
+
+        <TextView
+            android:id="@+id/threadPreview"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/threadName"
+            android:layout_toEndOf="@id/threadPhoto"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/text_primary" />
+
+        <TextView
+            android:id="@+id/threadTimestamp"
+            style="@style/TextAppearance.Material3.BodySmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/threadName"
+            android:textColor="@color/text_secondary" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
